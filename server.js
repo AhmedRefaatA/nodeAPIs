@@ -7,7 +7,7 @@ const bodyParserJson = bodyParser.json();
 
 
 mongoClient.connect("mongodb+srv://root:root@cluster0.dvdn4.mongodb.net/test?retryWrites=true&w=majority",function(err,client){
-    app.db = client.db("SchoolSystem");
+    app.db = client.db("test");
 });
 
 
