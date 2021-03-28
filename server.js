@@ -6,7 +6,7 @@ const app = express();
 const bodyParserJson = bodyParser.json();
 
 
-mongoClient.connect("mongodb://localhost:27017",function(err,client){
+mongoClient.connect("mongodb+srv://root:root@cluster0.dvdn4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",function(err,client){
     app.db = client.db("SchoolSystem");
 });
 
