@@ -97,4 +97,6 @@ app.get("/api/student/read/:id",function(req,res){
     res.send(student);
 })
 */
-app.listen(8080);
+
+const port =  process.env.PORT
+app.listen(port);
