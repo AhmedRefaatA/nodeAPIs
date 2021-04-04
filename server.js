@@ -60,7 +60,7 @@ app.get("/api/:col/:id",function(req,res){
 
 
 
-/*
+/**/ 
 let students = [];
 app.get("/",function(req,res){
     res.send({message:"welcome"});
@@ -96,7 +96,7 @@ app.get("/api/student/read/:id",function(req,res){
     let student = students.find((item)=>item.id==id);
     res.send(student);
 })
-*/
+/**/
 
 const port =  process.env.PORT
 app.listen(port);
